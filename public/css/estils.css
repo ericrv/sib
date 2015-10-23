@@ -1,0 +1,240 @@
+html, p {
+	font-family: Helvetica, sans-serif;
+	
+}
+.header {
+	background: url(../img/backgroundd.png) left center no-repeat;
+	margin: 20px 0 20px 0;
+	height: 100px;
+}
+.contacte {
+	text-align: right;
+	float: right;
+	font-size: 12px;
+	padding: 30px 15px 0 0;
+	color: #8a569b;
+	line-height: 10px;
+}
+#logo {
+	float: right;
+}
+.nav {
+	width: 100%;
+	border-top: 1px solid #e3e3e3;
+	border-bottom:  1px solid #e3e3e3;
+}
+.nav a {
+	color: #1f1d1b;
+}
+.navbar-brand {
+	height: auto;
+}
+.navbar-toggle {
+	margin-top: 40px;
+	margin-right: 33px;
+}
+.navbar-default {
+	background-color: #FFF;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: rgba(231, 231, 231, 0);
+}
+.navbar-collapse {
+	padding-right: 0;
+	padding-left: 30px;
+}
+@media (min-width: 768px) {
+	.navbar-header {
+	    float: right;
+	}
+}
+@media (max-width: 992px) {
+	div.overflow {
+		overflow: hidden;
+	}
+	.navbar-nav {
+		margin:0;
+	}
+	.navbar-toggle {
+		display: block !important;
+	}
+	.navbar-collapse {
+		padding: 0;
+	}
+	.navbar-collapse.collapse {
+		padding: 0;
+		float: none !important;
+	    display: none !important;
+	    clear: both;
+	    width: 100%;
+	}
+	.navbar-collapse.collapse.in {
+	    display: block !important;
+	    width: 100%;
+	}
+	.navbar-nav>li {
+    	float: none;
+	}
+
+}
+@media (min-width: 992px) {
+	.navbar-collapse.collapse {
+    	display: block!important;
+    	height: auto!important;
+    	padding-bottom: 0;
+    	overflow: visible!important;
+    	visibility: visible!important;
+	}
+}
+@media (min-width: 768px) {
+	nav {
+		background: url(../img/backgroundd.png) center center no-repeat;
+	}
+}
+h2 {
+	font-size: 15px;
+	color: #9f9f9f;
+	border-top: 5px solid #e3e3e3;
+	padding: 15px 0 10px 0;
+	margin: 0;
+}
+h3 {
+	font-size: 15px;
+	color: #8a559a;
+}
+h4 {
+	color: #9f9f9f;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.body img {
+	width: 100%;
+	height: auto;
+}
+.body {
+	padding-bottom: 15px;
+}
+.politica {
+	padding-top: 40px;
+}
+.politica p {
+	text-align: right;
+	color: #9f9f9f;
+}
+.noticies a {
+	color: #ffffff !important;
+	background-color: #8a569b;
+}
+.noticies a:hover {
+	background-color: #c2a3c2 !important;
+}
+.noticies.actiu {
+	color: #ffffff;
+	background-color: #8a569b;
+}
+.links {
+	margin-top: 10px;
+	color: #9f9f9f;
+}
+.links img {
+	float: right;
+}
+.button {
+	float: right;
+	padding-top: 15px;
+	}
+.textqs p {
+	color: #1f1b1d;
+}
+.link p {
+	color: #8a559a;
+}
+.peu {
+	color: #9f9f9f;
+	padding-top: 40px;
+}
+.imatge img {
+	padding-top: 15px;
+}
+.borde1 {
+	border-top: 5px solid #e3e3e3;
+	margin: 0;
+}
+.borde2 {
+	border-top: 5px solid #e3e3e3;
+	margin: 0;
+}
+.menu {
+	background-color: #ededed;
+	margin-top: 15px;
+	padding: 10px;
+}
+.menu li {
+	list-style: none;
+	padding-top: 10px;
+	color: #9c9fa4;
+}
+.menu a {
+	color: #9c9fa4;
+}
+.menu ul {
+	padding: 0;
+}
+.menu li.current {
+	color: #8a569b;
+}
+.menu a:hover {
+	text-decoration: none;
+}
+#foto-tractaments {
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+.actiu {
+	padding: 15px;
+	line-height: 20px;
+}
+#foto-readaptacio {
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+.textreadaptacio p {
+	padding-top: 20px;
+	
+}
+.text-contacte {
+	margin-top: 20px;
+}
+#foto-noticies {
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+#link-facebook {
+	padding-bottom: 10px;
+}
+.table th {
+	background-color: #75309d;
+	color: #fff;
+	text-align: center;
+	border: 0 !important;
+}
+.table {
+	border-collapse: separate;
+	border-spacing: 4px;
+	border-style: hidden;
+	text-align: center;
+	font-weight: bold;
+}
+.hora {
+	background-color: #dbcce1;
+	border: 0;
+	color: #875399;
+}
+.buit {
+	background-color: #f1ebf5;
+	border: 0 !important;
+	color: #875399;
+}

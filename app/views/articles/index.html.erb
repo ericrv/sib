@@ -1,0 +1,54 @@
+
+        <div class='links row'>
+          <div class='col-xs-3 col-sm-3 col-md-1 col-lg-1'>
+            <p>NOTÍCIES</p>
+          </div>
+          <div class='col-xs-offset-6 col-xs-3 col-sm-offset-7 col-sm-2 col-md-offset-10 col-md-1 col-lg-offset-10 col-lg-1'>
+            <a href="#"><img src="img/facebook.png" alt='logo facebook'></a>
+            <a href="#"><img src="img/instagram.png" alt='logo instagram'></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr class="borde1"/>
+          </div>
+        </div>
+        
+        <% if admin_signed_in? %>
+        <p class="text-right"><%= link_to "Sortir", destroy_admin_session_path, :method => :delete, :class => "btn btn-primary" %></p>
+        <% end %>
+
+        <% @articles.each do |article| %>
+          <div class='article row'>
+            <div class='col-xs-12 col-sm-12 col-md-6 col-lg-6'>
+              <%= link_to (image_tag article.foto.url(:normal)), article_path(article) %>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="float-overflow">
+                  <div class="article-title">
+                    <h2><%= link_to article.title, article_path(article)%></h2>
+                  </div>
+                  
+              </div>
+              <%= simple_format(article.resume) %>
+              <% if admin_signed_in? %>
+                    <div class="buttons">
+                      <%= link_to 'Veure', article_path(article), :class => "btn btn-primary"%>
+                      <%= link_to 'Editar', edit_article_path(article), :class => "btn btn-primary"%> 
+                      <%= link_to 'Eliminar', article_path(article), method: :delete, data: { confirm: 'Estas segur?' }, :class => "btn btn-primary"%>
+                    </div>
+                  <% end %>
+            </div>   
+          </div> 
+          <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr class="borde1"/>
+          </div>
+        </div>
+        <% end %>
+          
+            <div class="boto-nou">
+              <% if admin_signed_in? %>
+                <%= link_to 'Nou article', new_article_path, :class => "btn btn-primary" %>
+              <% end %>
+            </div>

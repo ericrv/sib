@@ -1,0 +1,29 @@
+
+        <div class='links row'>
+          <div class='col-xs-3 col-sm-3 col-md-1 col-lg-1'>
+            <p>NOTÍCIES</p>
+          </div>
+          <div class='col-xs-offset-7 col-xs-2 col-sm-offset-7 col-sm-2 col-md-offset-10 col-md-1 col-lg-offset-10 col-lg-1'>
+            <a href="#"><%= image_tag "facebook.png", :alt => "Facebook" %></a>
+            <a href="#"><%= image_tag "instagram.png", :alt => "Instagram" %></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr class="borde1"/>
+          </div>
+        </div>
+
+
+			<h1>Article nou</h1>
+
+			<%= render 'form' %>
+			 
+			<%= link_to 'Enrere', articles_path %>
+
+      <script>
+        $(function() {
+            $('#article_resume').editable({inlineMode: false});
+            $('#article_text').editable({inlineMode: false});
+        });
+      </script>

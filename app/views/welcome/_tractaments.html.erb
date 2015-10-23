@@ -1,0 +1,31 @@
+				<div class='links row'>
+					<div class='col-xs-3 col-sm-3 col-md-1 col-lg-1'>
+						<p>TRACTAMENTS</p>
+					</div>
+					<div class='col-xs-offset-6 col-xs-3 col-sm-offset-7 col-sm-2 col-md-offset-10 col-md-1 col-lg-offset-10 col-lg-1'>
+						<%= link_to image_tag("facebook.png", alt: "logo faceboook"), "#" %>
+						<%= link_to image_tag( "instagram.png", alt: "logo instagram"), "#" %>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<hr class="borde1"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-4 col-lg-4 hidden-xs">
+						<div class="menu">
+							<%= render :partial => "welcome/menu" %>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 visible-xs">
+						<div class="btn-group" id="boto-tractaments">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Tractaments <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<%= render :partial => "welcome/menu" %>
+							</ul>
+						</div>
+					</div>

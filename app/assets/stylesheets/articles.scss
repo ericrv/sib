@@ -1,0 +1,50 @@
+h1, h2, p {
+	font-family: Arial;
+}
+.article-title a {
+	color: #8A559A;
+	border-top: none;
+	padding-left: 0;
+	font-size: 25px;
+	display:inline;
+}
+.article-title a:hover {
+	text-decoration: none;
+}
+.article-title h2 {
+	padding: 0;
+}
+.title h2 {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+.article {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.btn-primary {
+	background-color: #8A559A;
+	border-color: #8A559A;
+}
+.btn-primary:hover,:visited {
+	background-color: #8A559A;
+	border-color: #8A559A;
+}
+.text-right {
+	padding-top: 10px;
+}
+.boto-nou {
+	padding-top: 20px;
+}
+.article img {
+	float: left;
+	padding-right: 15px;
+}
+.title h2, .article-title h2 {
+	font-size: 25px;
+	color: #8A559A;
+	border-top: none;
+}
+.article li {
+	margin-left: 15px;
+}
