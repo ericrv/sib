@@ -271,10 +271,9 @@ h4 {
 	color: #777;
 	display: block;
 	text-decoration: none;
-	width: 100%;
 	padding: 15px;
 	margin: -15px;
-}
+	}
 #boto-tractaments a:hover {
 	background-color: #eeeeee;
 }
