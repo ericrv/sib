@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-
+  get 'instalacions' => "welcome#instalacions", as: "instalacions"
   get 'contacte' => "welcome#contacte", as: "contacte"
   get 'qui-som' => "welcome#qui_som", as: "qui_som"
   get 'gimnastica-hipopressiva' => "welcome#gimnastica_hipopressiva", as: "gimnastica_hipopressiva"
@@ -16,7 +16,11 @@ Rails.application.routes.draw do
   get 'preparacio-al-part' => "welcome#preparacio_part", as: "preparacio_part"
   get 'post-part' => "welcome#post_part", as: "post_part"
   get 'massatge' => "welcome#massatge", as: "massatge"
+  get 'electroestimulacio' => "welcome#electroestimulacio", as: "electroestimulacio"
+  get 'ioga' => "welcome#ioga", as: "ioga"
+  get 'reiki' => "welcome#reiki", as: "reiki"
   get '/admin', to: redirect('/admins/sign_in')
+  post '/sendmessage' => "welcome#sendmessage"
 
   devise_for :admins
   resources :articles

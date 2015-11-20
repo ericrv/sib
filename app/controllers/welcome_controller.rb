@@ -1,5 +1,14 @@
 class WelcomeController < ApplicationController
   
+  def sendmessage
+    if params[:name].blank? || params[:email].blank? || params[:message].blank?
+      @error = "Tots els camps són obligatoris"
+      render :contacte
+    else
+      Contact.send_mail(params[:name], params[:email], params[:message]).deliver_now
+      redirect_to contacte_url, notice: "Missatge enviat!"
+    end
+  end
 
   def contacte
 

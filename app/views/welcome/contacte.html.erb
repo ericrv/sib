@@ -1,4 +1,4 @@
-<div class='links row'>
+				<div class='links row'>
 					<div class='col-xs-3 col-sm-3 col-md-1 col-lg-1'>
 						<p>CONTACTE</p>
 					</div>
@@ -16,6 +16,7 @@
 						<hr class="borde2"/>
 					</div>
 				</div>
+
 				<div class="row visible-xs">
 					<div class="col-xs-12">
 						<div class="menu">
@@ -47,6 +48,31 @@
 						<div class="text-contacte">
 								<p>Truca’ns i demana hora per gaudir dels nostres tractaments i per assistir als nostres cursos.</p>
 								<p><b>T’informarem sense compromís!</b></p>
+						</div>
+						<div class="contact-form">
+							<%= form_tag "/sendmessage" do %>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Name</label>
+							    <%= text_field_tag :name, params[:name], :class => "form-control", :placeholder => "Name" %>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPassword1">Email</label>
+							    <%= text_field_tag :email, params[:email], :class => "form-control", :placeholder => "Email" %>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputMessage">Missatge</label>
+								<%= text_area_tag :message, params[:message], :class => "form-control", :placeholder => "Missatge" %>
+							  </div>
+							  <% if flash[:notice] %>
+							  	<p class="alert alert-success"><%= flash[:notice] %></p>
+							  <% end %>
+							  <% if @error %>
+							  	<p class="alert alert-danger"><%= @error %></p>
+							  <% end %>
+
+								<%= submit_tag "Enviar" %>
+
+							<% end %>
 						</div>
 					</div>
 				</div>
@@ -74,11 +100,35 @@
 						</div>
 					</div>
 					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-						
 						<%= image_tag "mapa-contacte.png", alt: "mapa contacte", class: "foto-tractaments" %> 
 						<div class="text-contacte">
 								<p>Truca’ns i demana hora per gaudir dels nostres tractaments i per assistir als nostres cursos.</p>
 								<p><b>T’informarem sense compromís!</b></p>
+						</div>
+						<div class="contact-form">
+							<%= form_tag "/sendmessage" do %>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Name</label>
+							    <%= text_field_tag :name, params[:name], :class => "form-control", :placeholder => "Name" %>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPassword1">Email</label>
+							    <%= text_field_tag :email, params[:email], :class => "form-control", :placeholder => "Email" %>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputMessage">Missatge</label>
+								<%= text_area_tag :message, params[:message], :class => "form-control", :placeholder => "Missatge" %>
+							  </div>
+							  <% if flash[:notice] %>
+							  	<p class="alert alert-success"><%= flash[:notice] %></p>
+							  <% end %>
+							  <% if @error %>
+							  	<p class="alert alert-danger"><%= @error %></p>
+							  <% end %>
+
+								<%= submit_tag "Enviar" %>
+
+							<% end %>
 						</div>
 					</div>
 				</div>
