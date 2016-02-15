@@ -3,7 +3,7 @@ html, p {
 	
 }
 .header {
-	background: url(backgroundd.png) left center no-repeat;
+	background: url(asset-url("backgroundd.png")) left center no-repeat;
 	margin: 20px 0 20px 0;
 	height: 100px;
 }
@@ -217,7 +217,6 @@ h4 {
 .text-qui_som {
 	margin-top: 30px;
 	font-weight: bold;
-	
 }
 #foto-noticies {
 	width: 100%;
